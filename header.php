@@ -9,7 +9,7 @@ $row_count = mysqli_num_rows($select_rows);
 
    <div class="flex">
 
-      <a href="#" class="logo">Mantap</a>
+      <a href="#" class="logo">my store</a>
 
       <nav class="navbar">
          <a href="admin.php">add products</a>

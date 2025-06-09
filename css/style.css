@@ -3,7 +3,7 @@
 /* =================== ROOT & RESET =================== */
 :root{
    --blue:#333;
-   --red:rgb(216, 41, 10);
+   --red:rgb(195, 38, 10);
    --orange:rgb(1, 160, 1);
    --black:#333;
    --white:#fff;
@@ -72,23 +72,29 @@ input[type="submit"],
    cursor: pointer;
    margin-top: 1rem;
    box-shadow: 0 0.4rem 0.6rem rgba(0, 0, 0, 0.1);
-   transition: all 0.3s ease;
+   transition: background-color 0.3s ease, transform 0.3s ease;
    transform: scale(1);
 }
 
-.btn:hover, .option-btn:hover, .delete-btn:hover {
-   background-color: var(--black);
-   transform: scale(1.03);
-   box-shadow: 0 0.6rem 1.2rem rgba(0, 0, 0, 0.2);
+/* === Hover efek membesar untuk semua tombol === */
+.btn:hover,
+.option-btn:hover,
+.delete-btn:hover {
+   transform: scale(1.1);
+   box-shadow: 0 0.8rem 1.5rem rgba(0, 0, 0, 0);
 }
 
-/* Custom colors for option & delete buttons */
+/* === Warna hover khusus === */
+.btn:hover {
+   background-color: #05d308; /* light green */
+}
+
 .option-btn {
    background-color: var(--orange);
 }
 
 .option-btn:hover {
-   background-color: #15803d; /* darker green for hover */
+   background-color: #05d308; /* light green */
 }
 
 .delete-btn {
@@ -96,7 +102,7 @@ input[type="submit"],
 }
 
 .delete-btn:hover {
-   background-color: #a61d00;
+   background-color: #fe0000; /* light red */
 }
 
 
